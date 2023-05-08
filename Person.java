@@ -56,19 +56,19 @@ public class Person {
     }
 
     public void isRetired(){
-        if(getAge()>=65 && getSex() =="man") {
-            System.out.println("is retired");
+        if(getAge()>=65) {
+            System.out.println(name+"is retired");
         }else{
-                System.out.println("isn't retired");
-            }
+            System.out.println(name+"isn't retired");
         }
-
-
-        public void registeredPartnership (Person woman, String womanSurname) {
-      woman.setSurname(womanSurname);
-   }
-
     }
+
+
+    public void registeredPartnership() {
+    }
+}
+
+
 
 
 
