@@ -63,9 +63,20 @@ public class Person {
         }
     }
 
-
-    public void registeredPartnership() {
+    public void registerPartnership(Person person) {
+        if (partner == null) {
+            partner = person;
+            person.setPartner(this);
     }
+
+
+    public void deregisterPartnership ( boolean returnToPreviousLastName){
+        if (partner != null) {
+            partner.setPartner(null);
+            partner = null;
+        }
+    }
+
 }
 
 
