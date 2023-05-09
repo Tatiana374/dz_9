@@ -6,11 +6,9 @@ public class Main {
         man.isRetired();
         woman.isRetired();
         woman.registeredPartnership();
+        woman.deegisteredPartnership();
 
-        /* я перепрошую за тупе питання, шоб викликати ці методи, цього достаньо?
-
-         */
-
+      
 
 
 
