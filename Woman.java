@@ -5,28 +5,35 @@ public class Woman extends Person {
     }
 
     public void isRetired() {
-        if (getAge() >= 60) {
-            System.out.println(name + "is retired");
+        if (getAge(woman) >= 60) {
+            System.out.println(getname(woman) + "is retired");
         } else {
-            System.out.println(name + "isn't retired");
+            System.out.println(getname(woman) + "isn't retired");
         }
     }
 
-    public void registeredPartnership() {
-        if (getPartner() == true) {
-            System.out.println(name + man.getSurname);
-        } else {
-            System.out.println(name + "is free");
+    public void registeredPartnership(Man man ) {
+      this.surname= man.surname;
+      this.setPartnet(true);
         }
-/*  мені здається це якось тупо я написала, але не можу придумати далі, типу ідея завдання у тому,
-шоб я за допомогою якогось методу присвоїла прізвише of man ( from Class Man) але я не розумію як
- */
+
+        public void printNewSurname () {
+            if (getPartner()) {
+                System.out.println(this.getSurname());
+            } else {
+                System.out.println(this.getName() + "is free");
+
 
     }
  /* deregisterPartnership (як вхідний параметр приймає boolean: повернення до попереднього прізвища)
  я не розумію як це зробити взагалі
+ */
+
+
  public void deregisteredPartnership() {
-        if (getPartner() == false) {
-        System.out.println(name + woman.getSurname);
-  */
+        if (getPartner()) {
+        System.out.println(woman.getSurname());
+
+
+
 }
